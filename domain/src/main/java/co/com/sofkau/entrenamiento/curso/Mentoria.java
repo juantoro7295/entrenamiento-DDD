@@ -1,5 +1,6 @@
 package co.com.sofkau.entrenamiento.curso;
 
+
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofkau.entrenamiento.curso.values.Directiz;
 import co.com.sofkau.entrenamiento.curso.values.Fecha;
@@ -21,8 +22,7 @@ public class Mentoria extends Entity<MentoriaId> {
         this.fecha = fecha;
         this.directices = new HashSet<>();
     }
-
-    public void agregarDirectiz(Directiz directiz){
+    public void agregarDirectiz(Directiz directiz) {
         //TODO: validaciones
         this.directices.add(directiz);
     }
